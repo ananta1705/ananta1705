@@ -1,5 +1,7 @@
 ## Hi there 👋
-hai
+ 🔭 My ne is Ananta Puti Maharani. i live in east java, Indonesia
+ 🌱 I'am Student at Telkom University
+ 🤔 I am currently learning UI/UX Design, Flutter, TailwindCSS, Nodejs, Reactjs and Nextjs.
 <!--
 **ananta1705/ananta1705** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
