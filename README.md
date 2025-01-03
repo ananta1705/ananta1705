@@ -1,6 +1,5 @@
 # 💫 About Me:
-🔭My name is Ananta Puti Maharani. I’m 19 years old. I live in East Java, Indonesia,<br>🏫 I'm a student at Telkom University<br>🤝 I’m looking for help with<br>🌱 I’m currently learning UI/UX Design, HTML,CSS,Laravel
-
+🔭My name is Ananta Puti Maharani. I’m 19 years old. I live in East Java, Indonesia,<br>🏫 I'm a student at Telkom University<br>🤝 I’m looking for help with<br>🌱 
 
 ## 🌐 Socials:
 [![Behance](https://img.shields.io/badge/Behance-1769ff?logo=behance&logoColor=white)](https://behance.net/https://www.behance.net/anantaputi#) [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/mahananta) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/mahanantaa_) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/ananta-puti-299788281/) 
