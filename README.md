@@ -13,13 +13,16 @@ Hi, I'm Ananta Puti Maharani, a passionate UI/UX Designer and Front-End Develope
 ![](https://github-readme-stats.vercel.app/api?username=ananta1705&theme=algolia&hide_border=false&include_all_commits=true&count_private=true)
 ![](https://github-readme-streak-stats.herokuapp.com/?user=ananta1705&theme=algolia&hide_border=false)
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=ananta1705&theme=algolia&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake.svg" />
   <img alt="github-snake" src="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake.svg" />
 </picture>
+
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=ananta1705&limit=5&theme=github_dark_dimmed&combine_all_yearly_contributions=true)
 ---
