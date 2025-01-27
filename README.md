@@ -21,6 +21,10 @@ Hi, I'm Ananta Puti Maharani, a passionate UI/UX Designer and Front-End Develope
 [![](https://visitcount.itsvg.in/api?id=ananta1705&icon=0&color=6)](https://visitcount.itsvg.in)
 Thank you for visiting my GitHub profile! 😊 Feel free to explore my repositories, and don’t hesitate to give feedback or reach out for collaboration. Let’s build something amazing together!
 
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake.svg" />
+</picture>
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
