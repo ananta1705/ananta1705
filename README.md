@@ -72,9 +72,7 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ananta1705&layout=compact&theme=radical&hide_border=true" height="165px"/>
 </div>
 
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=ananta1705&theme=radical&hide_border=true" />
-</div>
+
 
 ---
 
