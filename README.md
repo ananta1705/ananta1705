@@ -64,20 +64,6 @@
 ![Canva](https://img.shields.io/badge/Canva-00C4CC?style=flat&logo=canva&logoColor=white)
 
 ---
-
-## 📈 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ananta1705&show_icons=true&theme=radical&count_private=true&hide_border=true" height="165px"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ananta1705&layout=compact&theme=radical&hide_border=true" height="165px"/>
-</div>
-
-
-
----
-
-
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake.svg" />
@@ -87,7 +73,5 @@
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=4000&pause=1000&center=true&vCenter=true&width=500&lines=Hello+World!+I'm+Ananta+Puti;UI%2FUX+Designer+%2B+Frontend+Dev.;Keep+designing+great+experiences!;Let's+connect+%26+collaborate+%F0%9F%92%AA" />
 </p>
-
----
 
 <!-- Crafted with love & coffee ☕ by Ananta Puti Maharani -->
