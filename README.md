@@ -12,23 +12,27 @@
 ---
 
 ## 🔗 Connect With Me
-
 <p align="left">
   <a href="https://www.linkedin.com/in/ananta-puti-299788281/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
+  &nbsp;
   <a href="https://instagram.com/mahanantaa_" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
   </a>
+  &nbsp;
   <a href="https://www.behance.net/anantaputi" target="_blank">
     <img src="https://img.shields.io/badge/Behance-1769FF?style=for-the-badge&logo=behance&logoColor=white"/>
   </a>
+  &nbsp;
   <a href="https://discord.gg/mahananta" target="_blank">
     <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
   </a>
+  &nbsp;&nbsp;
+ <img src="https://komarev.com/ghpvc/?username=ananta1705&label=Visitors&color=ff69b4&style=for-the-badge"/>
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=ananta1705.ananta1705&style=for-the-badge"/>
 </p>
 
----
 ## 💻 Tech Stack
 
 ### 🚀 Languages & Frameworks
