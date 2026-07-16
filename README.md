@@ -9,6 +9,10 @@
   <i>I love designing smooth, modern, and intuitive user interfaces — and turning them into beautiful digital experiences.</i>
 </p>
 
+<p align="center">
+  <img src="./terminal-profile.svg" alt="Terminal Profile" width="100%" />
+</p>
+
 ---
 
 ## 🔗 Connect With Me
