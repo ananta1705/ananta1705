@@ -136,16 +136,8 @@ async function run() {
     <stop offset="100%" stop-color="#4dd9e8" stop-opacity="0"/>
   </radialGradient>
   <clipPath id="outerClip"><rect width="940" height="560" rx="14"/></clipPath>
-  <clipPath id="dotClip"><rect x="20" y="76" width="296" height="416" rx="6"/></clipPath>
+  <clipPath id="dotClip"><rect x="0" y="0" width="296" height="416" rx="6"/></clipPath>
   <clipPath id="scanClip"><rect x="20" y="76" width="296" height="416" rx="6"/></clipPath>
-  <filter id="dotGlow" x="-30%" y="-30%" width="160%" height="160%">
-    <feGaussianBlur stdDeviation="1.5" result="blur"/>
-    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-  <filter id="textGlow">
-    <feGaussianBlur stdDeviation="2" result="blur"/>
-    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
 </defs>
 
 <g clip-path="url(#outerClip)">
@@ -179,7 +171,7 @@ async function run() {
   <rect x="20" y="76" width="296" height="416" rx="6" fill="url(#grid)"/>
 
   <!-- DOT-MATRIX PORTRAIT (generated from nanta.png) -->
-  <g clip-path="url(#dotClip)" transform="translate(20,76)" filter="url(#dotGlow)">
+  <g clip-path="url(#dotClip)" transform="translate(20,76)">
     ${dots}
   </g>
 
