@@ -1,4 +1,100 @@
-<svg width="940" height="560" viewBox="0 0 940 560" xmlns="http://www.w3.org/2000/svg">
+const { Jimp } = require('jimp');
+const fs = require('fs');
+
+const INPUT = 'nanta_fix.jpg';
+
+// Output SVG dimensions for the portrait panel
+const SVG_W = 296;
+const SVG_H = 416;
+
+// Dot grid config — how many columns & rows of sample points
+const COLS = 90;
+const ROWS = 130;
+
+const CELL_W = SVG_W / COLS;
+const CELL_H = SVG_H / ROWS;
+
+// Characters that look like the reference image dots
+const CHARS = ['·', ':', '.', '·', '+', '·', ':', '·', '-', '·'];
+
+async function run() {
+  console.log('Reading image...');
+  const buf = fs.readFileSync(INPUT);
+  const img = await Jimp.fromBuffer(buf);
+
+  // Crop to roughly portrait aspect ratio (center crop)
+  const iw = img.width;
+  const ih = img.height;
+  const targetAspect = SVG_W / SVG_H;
+  const imgAspect = iw / ih;
+
+  let cropX = 0, cropY = 0, cropW = iw, cropH = ih;
+  if (imgAspect > targetAspect) {
+    cropW = Math.round(ih * targetAspect);
+    cropX = Math.round((iw - cropW) / 2);
+  } else {
+    cropH = Math.round(iw / targetAspect);
+    cropY = 0;
+  }
+
+  // Jimp v1 chained methods
+  img.crop({ x: cropX, y: cropY, w: cropW, h: cropH });
+  img.resize({ w: COLS, h: ROWS });
+  img.greyscale();
+  img.contrast(0.3);
+  img.brightness(-0.1);
+
+  // Read pixels from bitmap buffer (RGBA)
+  const bmp = img.bitmap;
+  const pixels = [];
+  for (let row = 0; row < ROWS; row++) {
+    const rowData = [];
+    for (let col = 0; col < COLS; col++) {
+      const idx = (row * COLS + col) * 4;
+      const r = bmp.data[idx];
+      const g = bmp.data[idx + 1];
+      const b = bmp.data[idx + 2];
+      const a = bmp.data[idx + 3];
+      const brightness = (r * 0.299 + g * 0.587 + b * 0.114) / 255;
+      rowData.push({ brightness, alpha: a / 255 });
+    }
+    pixels.push(rowData);
+  }
+
+  console.log('Generating SVG dot-matrix...');
+
+  // Build SVG dot elements
+  let dots = '';
+  for (let row = 0; row < ROWS; row++) {
+    for (let col = 0; col < COLS; col++) {
+      const { brightness, alpha } = pixels[row][col];
+      if (alpha < 0.05) continue;
+
+      // Skip very dark background pixels
+      if (brightness < 0.08) continue;
+
+      const cx = col * CELL_W + CELL_W / 2;
+      const cy = row * CELL_H + CELL_H / 2;
+
+      // Map brightness to dot radius and opacity
+      // Brighter pixels = more visible dot
+      const normalised = Math.min(1, brightness);
+      const r = Math.max(0.3, normalised * 1.6);
+      const opacity = Math.min(1, 0.35 + normalised * 0.75);
+
+      // Slight glow on bright pixels
+      const glowOpacity = normalised > 0.55 ? (normalised - 0.55) * 0.6 : 0;
+
+      if (glowOpacity > 0) {
+        dots += `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(r * 2.8).toFixed(1)}" fill="#4dd9e8" opacity="${(glowOpacity * 0.3).toFixed(3)}"/>`;
+      }
+      dots += `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${r.toFixed(1)}" fill="#4dd9e8" opacity="${opacity.toFixed(3)}"/>`;
+    }
+  }
+
+  // Build full SVG with all the terminal card sections
+
+  const svg = `<svg width="940" height="560" viewBox="0 0 940 560" xmlns="http://www.w3.org/2000/svg">
 <defs>
   <style>
     .mono { font-family: 'Courier New', Courier, ui-monospace, monospace; }
@@ -84,7 +180,7 @@
 
   <!-- DOT-MATRIX PORTRAIT (generated from nanta.png) -->
   <g clip-path="url(#dotClip)" transform="translate(20,76)" filter="url(#dotGlow)">
-    
+    ${dots}
   </g>
 
   <!-- Scanline animation -->
@@ -215,4 +311,11 @@
   <!-- Footer bar -->
   <line x1="0" y1="557" x2="940" y2="557" stroke="#1c2b3a" stroke-width="1"/>
 </g>
-</svg>
+</svg>`;
+
+  fs.writeFileSync('terminal-profile.svg', svg, 'utf8');
+  const size = (fs.statSync('terminal-profile.svg').size / 1024).toFixed(1);
+  console.log(`✅ Done! terminal-profile.svg written (${size} KB)`);
+}
+
+run().catch(console.error);
