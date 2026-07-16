@@ -299,14 +299,17 @@ async function run() {
       <rect x="156" y="0" width="80" height="20" rx="4" fill="#F7DF1E"/>
       <text x="196" y="14" class="mono" fill="#000000" font-size="10.5" font-weight="bold" text-anchor="middle">JavaScript</text>
       
-      <rect x="242" y="0" width="54" height="20" rx="4" fill="#3776AB"/>
-      <text x="269" y="14" class="mono" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">Python</text>
+      <rect x="242" y="0" width="80" height="20" rx="4" fill="#3178C6"/>
+      <text x="282" y="14" class="mono" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">TypeScript</text>
       
-      <rect x="302" y="0" width="36" height="20" rx="4" fill="#777BB4"/>
-      <text x="320" y="14" class="mono" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">PHP</text>
+      <rect x="328" y="0" width="54" height="20" rx="4" fill="#3776AB"/>
+      <text x="355" y="14" class="mono" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">Python</text>
       
-      <rect x="344" y="0" width="48" height="20" rx="4" fill="#F54A2A"/>
-      <text x="368" y="14" class="mono" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">Swift</text>
+      <rect x="388" y="0" width="36" height="20" rx="4" fill="#777BB4"/>
+      <text x="406" y="14" class="mono" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">PHP</text>
+      
+      <rect x="430" y="0" width="48" height="20" rx="4" fill="#F54A2A"/>
+      <text x="454" y="14" class="mono" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">Swift</text>
     </g>
 
     <!-- Row 2: Front-End & UI Tools -->

@@ -257,14 +257,17 @@
       <rect x="156" y="0" width="80" height="20" rx="4" fill="#F7DF1E"/>
       <text x="196" y="14" class="mono" fill="#000000" font-size="10.5" font-weight="bold" text-anchor="middle">JavaScript</text>
       
-      <rect x="242" y="0" width="54" height="20" rx="4" fill="#3776AB"/>
-      <text x="269" y="14" class="mono" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">Python</text>
+      <rect x="242" y="0" width="80" height="20" rx="4" fill="#3178C6"/>
+      <text x="282" y="14" class="mono" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">TypeScript</text>
       
-      <rect x="302" y="0" width="36" height="20" rx="4" fill="#777BB4"/>
-      <text x="320" y="14" class="mono" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">PHP</text>
+      <rect x="328" y="0" width="54" height="20" rx="4" fill="#3776AB"/>
+      <text x="355" y="14" class="mono" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">Python</text>
       
-      <rect x="344" y="0" width="48" height="20" rx="4" fill="#F54A2A"/>
-      <text x="368" y="14" class="mono" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">Swift</text>
+      <rect x="388" y="0" width="36" height="20" rx="4" fill="#777BB4"/>
+      <text x="406" y="14" class="mono" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">PHP</text>
+      
+      <rect x="430" y="0" width="48" height="20" rx="4" fill="#F54A2A"/>
+      <text x="454" y="14" class="mono" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">Swift</text>
     </g>
 
     <!-- Row 2: Front-End & UI Tools -->
@@ -349,7 +352,7 @@
 	</g>
 </svg>
 
-    <svg x="295" y="5" height="20" width="80.6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="smooth" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="round"><rect fill="#fff" height="20" rx="3" width="80.6"/></clipPath><g clip-path="url(#round)"><rect fill="#595959" height="20" width="49.6"/><rect fill="#1283c3" height="20" width="31.0" x="49.6"/><rect fill="url(#smooth)" height="20" width="80.6"/></g><g fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110" text-anchor="middle"><text fill="#010101" fill-opacity=".3" lengthAdjust="spacing" textLength="396.0" transform="scale(0.1)" x="258.0" y="150">visitors</text><text lengthAdjust="spacing" textLength="396.0" transform="scale(0.1)" x="258.0" y="140">visitors</text><text fill="#010101" fill-opacity=".3" lengthAdjust="spacing" textLength="210.0" transform="scale(0.1)" x="641.0" y="150">264</text><text lengthAdjust="spacing" textLength="210.0" transform="scale(0.1)" x="641.0" y="140">264</text><a href="https://visitor-badge.laobi.icu"><rect fill="rgba(0,0,0,0)" height="20" width="49.6"/></a><a href="https://visitor-badge.laobi.icu"><rect fill="rgba(0,0,0,0)" height="20" width="31.0" x="49.6"/></a></g></svg>
+    <svg x="295" y="5" height="20" width="80.6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="smooth" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="round"><rect fill="#fff" height="20" rx="3" width="80.6"/></clipPath><g clip-path="url(#round)"><rect fill="#595959" height="20" width="49.6"/><rect fill="#1283c3" height="20" width="31.0" x="49.6"/><rect fill="url(#smooth)" height="20" width="80.6"/></g><g fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110" text-anchor="middle"><text fill="#010101" fill-opacity=".3" lengthAdjust="spacing" textLength="396.0" transform="scale(0.1)" x="258.0" y="150">visitors</text><text lengthAdjust="spacing" textLength="396.0" transform="scale(0.1)" x="258.0" y="140">visitors</text><text fill="#010101" fill-opacity=".3" lengthAdjust="spacing" textLength="210.0" transform="scale(0.1)" x="641.0" y="150">265</text><text lengthAdjust="spacing" textLength="210.0" transform="scale(0.1)" x="641.0" y="140">265</text><a href="https://visitor-badge.laobi.icu"><rect fill="rgba(0,0,0,0)" height="20" width="49.6"/></a><a href="https://visitor-badge.laobi.icu"><rect fill="rgba(0,0,0,0)" height="20" width="31.0" x="49.6"/></a></g></svg>
   </g>
 </g>
 </svg>
