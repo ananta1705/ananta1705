@@ -1,4 +1,4 @@
-<h1 align="center">
+<!-- <h1 align="center">
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35" style="vertical-align:middle"/> Hi there! I'm Ananta Puti Maharani
 </h1>
 
@@ -7,15 +7,14 @@
 </p>
 <p align="center">
   <i>I love designing smooth, modern, and intuitive user interfaces — and turning them into beautiful digital experiences.</i>
-</p>
+</p> -->
 
 <p align="center">
   <img src="./terminal-profile.svg" alt="Terminal Profile" width="100%" />
 </p>
 
----
 
-## 🔗 Connect With Me
+<!-- ## 🔗 Connect With Me
 <p align="left">
   <a href="https://www.linkedin.com/in/ananta-puti-299788281/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
@@ -32,12 +31,10 @@
   <a href="https://discord.gg/mahananta" target="_blank">
     <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
   </a>
-  &nbsp;&nbsp;
- <img src="https://komarev.com/ghpvc/?username=ananta1705&label=Visitors&color=ff69b4&style=for-the-badge"/>
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=ananta1705.ananta1705&style=for-the-badge"/>
 </p>
+-->
 
-## 💻 Tech Stack
+<!-- ## 💻 Tech Stack
 
 ### 🚀 Languages & Frameworks
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
@@ -65,7 +62,7 @@
 ![Adobe XD](https://img.shields.io/badge/Adobe_XD-FF61F6?style=for-the-badge&logo=adobexd&logoColor=white)
 ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white)
+![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white) -->
 
 ---
 <picture>
