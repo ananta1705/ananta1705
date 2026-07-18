@@ -6,8 +6,8 @@ const SVG_W = 296;  // portrait box width
 const SVG_H = 416;  // portrait box height
 
 // Scanline style: fewer ROWS = visible gap between lines (like the reference)
-const COLS = 135;   // horizontal dots per row (increased for more detail)
-const ROWS = 95;    // vertical rows
+const COLS = 90;    // horizontal dots per row (reduced for performance)
+const ROWS = 63;    // vertical rows
 
 const CELL_W = SVG_W / COLS;  // ~2.8px per dot
 const CELL_H = SVG_H / ROWS;  // ~5.5px per row (creates the horizontal line gaps)
@@ -81,7 +81,7 @@ async function run() {
   const CHAR_MAP = ['.', '-', '+', '=', '#', '@'];
 
   for (let row = 0; row < ROWS; row++) {
-    let rowHtml = '';
+    let rowStr = '';
     // Y is baseline for text
     const cy = (row * CELL_H + CELL_H - 1).toFixed(2);
 
@@ -89,25 +89,20 @@ async function run() {
       const brightness = pixels[row][col];
 
       // Skip very bright pixels (white background) and very dark (pure black shadow)
-      if (brightness > 0.96) continue;
-      if (brightness < 0.01) continue;
-
-      const cx = (col * CELL_W).toFixed(2);
+      if (brightness > 0.96 || brightness < 0.01) {
+        rowStr += ' ';
+        continue;
+      }
 
       // Map brightness to character
       const t = Math.max(0, Math.min(1, (brightness - 0.01) / (0.96 - 0.01)));
       const charIdx = Math.floor(t * (CHAR_MAP.length - 1));
-      const char = CHAR_MAP[charIdx];
-
-      // Opacity: brighter areas slightly more opaque
-      const opacity = (0.4 + t * 0.6).toFixed(2);
-
-      rowHtml += `<tspan x="${cx}" opacity="${opacity}">${char}</tspan>`;
+      rowStr += CHAR_MAP[charIdx];
     }
     
-    if (rowHtml) {
-      // Use monospace font so characters align. Smaller font size for higher resolution.
-      dots += `<text y="${cy}" font-family="'Courier New', Courier, monospace" font-size="5.5" fill="#4dd9e8" font-weight="bold">${rowHtml}</text>\n`;
+    if (rowStr.trim().length > 0) {
+      // Use monospace font, xml:space="preserve", and textLength to perfectly align characters without needing per-pixel positioning
+      dots += `<text y="${cy}" font-family="'Courier New', Courier, monospace" font-size="5.5" fill="#4dd9e8" font-weight="bold" xml:space="preserve" textLength="${SVG_W}" lengthAdjust="spacing">${rowStr}</text>\n`;
     }
   }
 
